@@ -32,3 +32,33 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Flutter
+flutter/.dart_tool/
+flutter/.flutter-plugins
+flutter/.flutter-plugins-dependencies
+flutter/build/
+flutter/.packages
+flutter/pubspec.lock
+
+# Flask
+flask/__pycache__/
+flask/*.pyc
+flask/.env
+flask/venv/
+flask/.venv/
+flask/instance/
+
+# General
+.DS_Store
+.env
+*.log
+```
+
+**Repo structure to initialize with:**
+```
+she-has-to-wee/
+  flutter/        # create flutter project here
+  flask/          # create flask project here
+  .gitignore
+  README.md
