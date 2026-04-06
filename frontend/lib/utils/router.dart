@@ -5,6 +5,7 @@ import '../screens/submit_bathroom.dart';
 import '../screens/review.dart';
 import '../screens/profile.dart';
 import '../screens/auth.dart';
+import '../screens/finder.dart';
 
 
 final appRouter = GoRouter(
@@ -15,8 +16,12 @@ final appRouter = GoRouter(
       builder: (context, state) => const AuthScreen(),
     ),
     GoRoute(
-      path: '/home',
+      path: '/',
       builder: (context, state) => const HomeScreen(),
+    ),
+        GoRoute(
+      path: '/finder',
+      builder: (context, state) => const FinderScreen(),
     ),
     GoRoute(
       path: '/bathroom/:id',

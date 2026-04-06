@@ -25,7 +25,7 @@ class _AuthScreenState extends State<AuthScreen> {
           };
         });
         if (_currentUser != null && mounted) {
-          context.go('/home');
+          context.go('/');
         }
       });
       _googleSignIn.attemptLightweightAuthentication();

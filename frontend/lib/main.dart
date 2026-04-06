@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'She Has To Wee',
+      routerConfig: appRouter,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF9B3FC8),
@@ -21,7 +22,6 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
 ),
-      routerConfig: appRouter,
     );
   }
 }
